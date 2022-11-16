@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "af80b760-c546-4f19-83eb-c75fc1e1cbba",
+		"name": "CRUD Contacts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24436910"
+	},
+	"item": [
+		{
+			"name": "Get all contacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7016/api/Contacts",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7016",
+					"path": [
+						"api",
+						"Contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fullName\": \"Aakash Shah\",\r\n  \"email\": \"aakash1@mail.com\",\r\n  \"phone\": 9876342122,\r\n  \"address\": \"Ahmedabad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7016/api/Contacts",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7016",
+					"path": [
+						"api",
+						"Contacts"
+					]
+				},
+				"description": "This API can be used for creating new contact."
+			},
+			"response": []
+		},
+		{
+			"name": "Get a contact",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7016/api/Contacts/cc08662d-b9cf-49a8-b98e-9a9e412cc863",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7016",
+					"path": [
+						"api",
+						"Contacts",
+						"cc08662d-b9cf-49a8-b98e-9a9e412cc863"
+					]
+				},
+				"description": "API used to get contact with entered ID."
+			},
+			"response": []
+		},
+		{
+			"name": "Update a contact",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fullName\": \"Mohan Singh\",\r\n  \"email\": \"mohan@mail.com\",\r\n  \"phone\": 8891234321,\r\n  \"address\": \"Delhi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7016/api/Contacts/1e96ee91-1803-4bc5-9673-d87700101260",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7016",
+					"path": [
+						"api",
+						"Contacts",
+						"1e96ee91-1803-4bc5-9673-d87700101260"
+					]
+				},
+				"description": "API to update a contact."
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a contact",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7016/api/Contacts/74214091-e09d-42b1-b8a8-71c262f8353a",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7016",
+					"path": [
+						"api",
+						"Contacts",
+						"74214091-e09d-42b1-b8a8-71c262f8353a"
+					]
+				},
+				"description": "API to delete a contact."
+			},
+			"response": []
+		}
+	]
+}
